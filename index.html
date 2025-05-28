@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link   rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <style>
+        :root {
+  --bulma-primary-h: 0deg;
+  --bulma-primary-s: 99%;
+  --bulma-primary-l: 56%;
+  
+  --cor-texto-branco: hsl(0, 0%, 100%);
+  --cor-buton-branco: hsl(0, 100%, 50%);
+}
+    .has-text-secundary{
+        color: var(--cor-texto-branco);
+    }
+
+    #buton_cresce{
+        transition: transform 0.2s;
+        
+    }
+    #buton_cresce:hover{
+        transform: scale(4);
+        cursor: pointer;
+        background-color: var(--cor-buton-branco)
+    }
+    
+    .centralizar {
+      height: 30rem;
+    }
+    </style>
+</head>
+<body>
+    <div class="centralizar is-flex is-justify-content-center is-align-items-center">
+    <button  class="button is-rounded is-primary " id="buton_cresce"><a class="has-text-secundary" href="pg02.html">I LOVE U ❤ </a></button>
+    </div>
+</body>
+</html>
